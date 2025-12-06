@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sayyidah's web</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo"><img src="images/logo.png" alt="logo" /></a>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#profile">Our Profile</a></li>
+                <li><a href="#contact">Message Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Photo Banner with Welcome Text -->
+    <header class="photo-banner">
+        <img src="images/banner.png" alt="Banner" />
+        <div class="banner-overlay">
+            <!-- Welcome text will be injected here via JS -->
+            <h2 id="welcome-text">Hi Guest, Welcome To Website</h2>
+            <p>This is my first website practice.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <!-- Our Profile / Headquarter Section -->
+        <section id="profile" class="profile-section">
+            <h2>Our Profile</h2>
+            <div class="profile-info">
+                <p><strong> Company Name:</strong> Sayyidah's Company</p>
+                <p><strong> Established:</strong> 15 Maret 2020</p>
+                <p><strong> Team Size:</strong> 12 </p>
+                </p>
+            <p>founded in 2025, we have collaborated with universities</p>
+
+            <h3>Vision</h3>
+            <p>
+                Become the leading game developer innovation center in Southeast Asia by 2030. </p>
+
+            <h3>Mission</h3>
+            <ul>
+                <li>Developing games</li>
+                <li>Empowering institutions through training and technology transfer.</li>
+            </ul>
+            </div>
+
+            <h3>Our Headquarter & Branches</h3>
+            <div class="headquarter-cards">
+                <div class="hq-card">
+                    <div class="circle">
+                        <img src="images/jakarta.jpg" alt="Jakarta Office" />
+                    </div>
+                    <p><strong>Jakarta (Head Office)</strong><br>
+                        Graha Krama, Lt. 5, Jl. HR Rasuna Said, Kuningan</p>
+                </div>
+                <div class="hq-card">
+                    <div class="circle">
+                        <img src="images/bandung.jpg" alt="Bandung Office" />
+                    </div>
+                    <p><strong>Bandung (R&D Center)</strong><br>
+                        Gedung Techno Park, ITB, Jl. Ganesha</p>
+                </div>
+                <div class="hq-card">
+                    <div class="circle">
+                        <img src="images/surabaya.jpg" alt="Surabaya Office" />
+                    </div>
+                    <p><strong>Surabaya (Field Operation)</strong><br>
+                        Gedung Pusat Inovasi, ITS, Sukolilo</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section id="contact" class="contact-section">
+            <h2>Message Us</h2>
+            <div class="form-and-result">
+                <form id="contact-form">
+                    <div class="form-row">
+                        <label for="name">Nama :</label>
+                        <input type="text" id="name" placeholder="Nama" required />
+                    </div>
+
+                    <div class="form-row">
+                        <label for="birth">Tanggal Lahir :</label>
+                        <input type="date" id="birth" required />
+                    </div>
+
+                    <div class="form-row">
+                        <label>Jenis Kelamin :</label>
+                        <div class="gender-radio-group">
+                            <input type="radio" id="male" name="gender" value="Laki-Laki" required />
+                            <label for="male">Laki-Laki</label>
+                            <input type="radio" id="female" name="gender" value="Perempuan" />
+                            <label for="female">Perempuan</label>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="message">Pesan :</label>
+                        <textarea id="message" rows="5" placeholder="Pesan" required></textarea>
+                    </div>
+
+                    <button type="submit">Submit</button>
+                </form>
+
+                <!-- Display area for submitted data -->
+                <div id="display-result" class="result-box">
+                    <p><strong>Current time:</strong> <span id="current-time"></span></p>
+                    <p><strong>Nama:</strong> <span id="display-name">-</span></p>
+                    <p><strong>Tanggal Lahir:</strong> <span id="display-birth">-</span></p>
+                    <p><strong>Jenis Kelamin:</strong> <span id="display-gender">-</span></p>
+                    <p><strong>Pesan:</strong> <span id="display-message">-</span></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Created By Sayyidah</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
